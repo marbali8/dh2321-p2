@@ -30,7 +30,7 @@ function init() {
     let polyLines;
 
     //CARS
-    let dataCSV = 'data/cars.csv'; //name
+    let dataCSV = "https://raw.githubusercontent.com/marbali8/dh2321-p2/master/data/cars.csv"; //name
     let keyCSV = "name";
 
     d3.csv(dataCSV, function (data) {

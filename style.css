@@ -1,0 +1,30 @@
+body {
+    font: 12px sans-serif;
+}
+
+svg {
+    font: 10px sans-serif;
+}
+
+.instructions {
+    color: red;
+}
+
+.optional {
+    color: darkgreen;
+}
+
+.axis line,
+.axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    fill: black;
+}
+
+fieldset {
+    border-width: 0;
+}

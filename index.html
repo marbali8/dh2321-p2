@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vis1 InfoVis Lab Exercise</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- include d3 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- include jQueryUI -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- include Vis1 script -->
+    <script src="vis1.js"></script>
+
+</head>
+
+<body onload="init()">
+
+
+<h1>Vis1 InfoVis Lab Exercise</h1>
+<!--
+<div class="instructions">TODOs:
+<ul>
+    <li>Load data file using d3</li>
+    <li>Parse dimensions (i.e., column headers)</li>
+</ul>
+</div>-->
+
+
+<!-- parallel coordinates -->
+<h2>Parallel Coordinates</h2>
+<!--
+<div class="instructions">TODOs:
+    <ul>
+        <li>Label axes with parsed dimensions</li>
+        <li>Scale axes to extents of dimensions</li>
+        <li>Render the poly lines</li>
+    </ul>
+</div>
+<div class="optional">Optional TODOs:
+    <ul>
+        <li>Display the name attribute on mouseover</li>
+        <li>Implement brushing+linking between parallel coordinates and scatterplot</li>
+    </ul>
+</div>-->
+<div id="pc"></div>
+
+<!-- menu -->
+<h2>Scatterplot</h2>
+<p>Select dimensions to be displayed here: </p>
+<div id="menu">
+
+    <form action="#">
+
+        <fieldset>
+            <label for="scatterX">x axis: </label>
+            <select name="scatterX" id="scatterX">
+            </select>
+            <label for="scatterY">y axis: </label>
+            <select name="scatterY" id="scatterY">
+            </select>
+            <br/>
+            <label for="color">color: </label>
+            <select name="color" id="color">
+            </select>
+            <label for="size">size: </label>
+            <select name="size" id="size">
+            </select>
+        </fieldset>
+
+    </form>
+
+</div>
+
+<!-- scatterplot -->
+<!--
+<div class="instructions">TODOs:
+    <ul>
+        <li>Scale axes to extents of dimensions selected in the menu</li>
+        <li>Render dots at correct positions</li>
+        <li>Map selected color dimension to a color scale</li>
+        <li>Size dots according to chosen size dimension</li>
+    </ul>
+</div>
+<div class="optional">Optional TODOs:
+    <ul>
+        <li>Make transitions animated</li>
+        <li>Display the name attribute on mouseover</li>
+    </ul>
+</div>-->
+<div id="sp"></div>
+
+<!-- credits -->
+<div id="credits">
+    Created by <div class="instructions">Eder Julia, Bayat Hannah Clara</div>
+    based on Vis1 example by <a href="http://www.cg.tuwien.ac.at">CG-institute at TU Wien</a>.
+</div>
+
+</body>
+</html>
